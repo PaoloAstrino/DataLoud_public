@@ -1,0 +1,64 @@
+# GitHub Pages Configuration for AI-Powered Document Chatbot
+title: "AI-Powered Document Chatbot"
+description: "An intelligent document analysis chatbot that enables natural language conversations with your documents using advanced RAG (Retrieval-Augmented Generation) architecture."
+author: "Paolo Astrino"
+email: "your-email@example.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# GitHub Pages settings
+repository: PaoloAstrino/DataLoud_public
+github_username: PaoloAstrino
+
+# SEO and social media
+url: "https://paoloastrino.github.io"
+baseurl: "/DataLoud_public"
+twitter_username: your_twitter_handle
+linkedin_username: your_linkedin_profile
+
+# Navigation structure
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Documentation"
+    url: "/INDEX"
+  - title: "API Reference"
+    url: "/API"
+  - title: "User Guide"
+    url: "/USER_GUIDE"
+  - title: "Architecture"
+    url: "/ARCHITECTURE"
+  - title: "Contributing"
+    url: "/CONTRIBUTING"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - .git/
+  - node_modules/
+  - vendor/
+
+# Include additional files
+include:
+  - _pages/
+  - assets/
+
+# Markdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true

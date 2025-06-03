@@ -1,0 +1,190 @@
+/* DataLoud Modern Dark Theme */
+/* Import design from design folder */
+
+/* Override Jekyll's default styles with our modern dark theme */
+.site-header {
+    display: none !important;
+}
+
+.site-nav {
+    display: none !important;
+}
+
+/* Additional styles for Jekyll compatibility */
+.page-content {
+    padding: 0 !important;
+    margin-top: 80px !important;
+}
+
+.wrapper {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Content sections styling */
+.content-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-section h1,
+.content-section h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.content-section p {
+    color: #9ca3af;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.content-section ul,
+.content-section ol {
+    color: #9ca3af;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+}
+
+.content-section a {
+    color: #60a5fa;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.content-section a:hover {
+    border-bottom-color: #60a5fa;
+}
+
+.content-section code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: 'Fira Code', 'Consolas', monospace;
+    color: #fbbf24;
+}
+
+.content-section pre {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.content-section pre code {
+    background: none;
+    padding: 0;
+    color: #e5e7eb;
+}
+
+/* Table styles */
+.content-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.content-section th,
+.content-section td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content-section th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: white;
+}
+
+.content-section td {
+    color: #9ca3af;
+}
+
+/* Blockquote styles */
+.content-section blockquote {
+    border-left: 4px solid #60a5fa;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #d1d5db;
+    background: rgba(96, 165, 250, 0.1);
+    padding: 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Badge styles for status indicators */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge.production {
+    background: #10b981;
+    color: white;
+}
+
+.badge.beta {
+    background: #f59e0b;
+    color: white;
+}
+
+.badge.alpha {
+    background: #ef4444;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 3rem 1rem;
+    }
+    
+    .content-section h1 {
+        font-size: 2rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .content-section table {
+        font-size: 0.875rem;
+    }
+    
+    .content-section th,
+    .content-section td {
+        padding: 0.5rem;
+    }
+}

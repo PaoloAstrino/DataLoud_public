@@ -1,222 +1,460 @@
-# 📚 Documentation Index
-
-Welcome to the AI-Powered Document Chatbot documentation hub! This comprehensive documentation suite provides everything you need to understand, use, deploy, and contribute to the project.
-
-## 🗂️ Documentation Overview
-
-### 📖 Main Documentation Files
-
-#### **[README.md](./README.md)** 📖
-
-**The main project overview** - Start here for a complete introduction to the AI-Powered Document Chatbot.
-
-- Project overview and key features
-- Technology stack and architecture summary
-- Performance metrics and capabilities
-- Getting started information
-
-#### **[ARCHITECTURE.md](./ARCHITECTURE.md)** 🏗️
-
-**System design and technical architecture** - Deep dive into how the system works.
-
-- Detailed system architecture diagrams
-- Component breakdown and relationships
-- Data flow and processing pipelines
-- Scalability and performance considerations
-
-#### **[API.md](./API.md)** 📡
-
-**Complete API reference** - Everything developers need for integration.
-
-- All API endpoints with examples
-- Request/response formats
-- Authentication methods
-- Error handling and status codes
-- SDK examples in multiple languages
-
-#### **[DEPLOYMENT.md](./DEPLOYMENT.md)** 🚀
-
-**Production deployment guide** - How to deploy your own instance.
-
-- Step-by-step deployment instructions
-- Environment configuration
-- Database setup and schema
-- Security hardening and monitoring
-- Troubleshooting common issues
-
-#### **[USER_GUIDE.md](./USER_GUIDE.md)** 👤
-
-**Complete user manual** - How to use the chatbot effectively.
-
-- Getting started in 3 simple steps
-- Best practices for asking questions
-- Document upload guidelines
-- Feature explanations and tips
-- Troubleshooting user issues
-
-#### **[TECHNICAL_SPECS.md](./TECHNICAL_SPECS.md)** 🔧
-
-**Detailed technical specifications** - In-depth technical details.
-
-- System requirements and performance metrics
-- AI/ML model specifications
-- Database schema and indexing
-- Security implementations
-- Compliance and standards
-
-#### **[CHANGELOG.md](./CHANGELOG.md)** 📋
-
-**Version history and updates** - Track project evolution.
-
-- Release notes and version history
-- Feature additions and improvements
-- Bug fixes and security updates
-- Breaking changes and migration guides
-
-#### **[CONTRIBUTING.md](./CONTRIBUTING.md)** 🤝
-
-**Developer contribution guidelines** - How to contribute to the project.
-
-- Development environment setup
-- Code style and standards
-- Pull request process
-- Testing requirements
-- Community guidelines
-
-## 🎯 Quick Navigation by Role
-
-### 👤 **For End Users**
-
-Start with these documents to learn how to use the chatbot:
-
-1. **[README.md](./README.md#overview)** - Project overview
-2. **[USER_GUIDE.md](./USER_GUIDE.md#getting-started)** - How to use the chatbot
-3. **[USER_GUIDE.md](./USER_GUIDE.md#troubleshooting)** - Common issues and solutions
-
-### 🔧 **For Developers**
-
-Essential reading for integration and development:
-
-1. **[API.md](./API.md#endpoints)** - API documentation
-2. **[ARCHITECTURE.md](./ARCHITECTURE.md#component-breakdown)** - System architecture
-3. **[CONTRIBUTING.md](./CONTRIBUTING.md#development-setup)** - Development guidelines
-4. **[TECHNICAL_SPECS.md](./TECHNICAL_SPECS.md#api-specifications)** - Technical details
-
-### 🚀 **For DevOps/System Administrators**
-
-Documentation for deployment and operations:
-
-1. **[DEPLOYMENT.md](./DEPLOYMENT.md#production-architecture)** - Deployment guide
-2. **[TECHNICAL_SPECS.md](./TECHNICAL_SPECS.md#infrastructure-specifications)** - Infrastructure requirements
-3. **[ARCHITECTURE.md](./ARCHITECTURE.md#security-architecture)** - Security considerations
-4. **[DEPLOYMENT.md](./DEPLOYMENT.md#monitoring--observability)** - Monitoring setup
-
-### 📊 **For Project Managers/Stakeholders**
-
-High-level project information:
-
-1. **[README.md](./README.md#key-features)** - Features and capabilities
-2. **[CHANGELOG.md](./CHANGELOG.md)** - Project progress and updates
-3. **[TECHNICAL_SPECS.md](./TECHNICAL_SPECS.md#performance-metrics)** - Performance metrics
-4. **[README.md](./README.md#use-cases-and-examples)** - Use cases and examples
-
-## 🔍 Find Information By Topic
-
-### 🏗️ **Architecture & Design**
-
-- [System Architecture](./ARCHITECTURE.md#architecture-diagram)
-- [Component Breakdown](./ARCHITECTURE.md#component-breakdown)
-- [Data Flow](./ARCHITECTURE.md#data-flow)
-- [Technology Stack](./README.md#tech-stack)
-
-### 📡 **API Integration**
-
-- [API Endpoints](./API.md#endpoints)
-- [Authentication](./API.md#authentication)
-- [Rate Limits](./API.md#rate-limiting)
-- [SDK Examples](./API.md#sdk-examples)
-
-### 🚀 **Deployment & Setup**
-
-- [Production Deployment](./DEPLOYMENT.md#deployment-steps)
-- [Environment Configuration](./DEPLOYMENT.md#environment-configuration)
-- [Database Setup](./DEPLOYMENT.md#database-setup-supabase)
-- [Scaling Considerations](./DEPLOYMENT.md#scaling-considerations)
-
-### 🔧 **Technical Details**
-
-- [Performance Metrics](./TECHNICAL_SPECS.md#performance-metrics)
-- [System Requirements](./TECHNICAL_SPECS.md#system-requirements)
-- [Database Schema](./TECHNICAL_SPECS.md#database-schema)
-- [Security Specifications](./TECHNICAL_SPECS.md#security-specifications)
-
-### 👤 **User Experience**
-
-- [Getting Started](./USER_GUIDE.md#getting-started)
-- [Feature Guide](./USER_GUIDE.md#feature-guide)
-- [Best Practices](./USER_GUIDE.md#tips-for-better-results)
-- [Troubleshooting](./USER_GUIDE.md#troubleshooting)
-
-### 🤝 **Development**
-
-- [Contributing Guidelines](./CONTRIBUTING.md#contribution-types)
-- [Code Standards](./CONTRIBUTING.md#code-guidelines)
-- [Testing Requirements](./CONTRIBUTING.md#testing-guidelines)
-- [Pull Request Process](./CONTRIBUTING.md#pull-request-process)
-
-## 📋 Document Status
-
-| Document           | Last Updated | Status      | Completeness |
-| ------------------ | ------------ | ----------- | ------------ |
-| README.md          | 2024-06-03   | ✅ Complete | 100%         |
-| ARCHITECTURE.md    | 2024-06-03   | ✅ Complete | 100%         |
-| API.md             | 2024-06-03   | ✅ Complete | 100%         |
-| DEPLOYMENT.md      | 2024-06-03   | ✅ Complete | 100%         |
-| USER_GUIDE.md      | 2024-06-03   | ✅ Complete | 100%         |
-| TECHNICAL_SPECS.md | 2024-06-03   | ✅ Complete | 100%         |
-| CHANGELOG.md       | 2024-06-03   | ✅ Complete | 100%         |
-| CONTRIBUTING.md    | 2024-06-03   | ✅ Complete | 100%         |
-
-## 🔗 External Resources
-
-### 🌐 **Technology Documentation**
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Flask Documentation](https://flask.palletsprojects.com/)
-- [Supabase Documentation](https://supabase.com/docs)
-- [HuggingFace Transformers](https://huggingface.co/docs/transformers)
-
-### 📚 **Learning Resources**
-
-- [RAG (Retrieval-Augmented Generation) Guide](https://huggingface.co/docs/transformers/model_doc/rag)
-- [Vector Databases Explained](https://www.pinecone.io/learn/vector-database/)
-- [LangChain Documentation](https://python.langchain.com/docs/get_started/introduction)
-
-### 🛠️ **Development Tools**
-
-- [Vercel Deployment](https://vercel.com/docs)
-- [Render.com Documentation](https://render.com/docs)
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
-
-## 📞 Getting Help
-
-### 🆘 **Need Help?**
-
-1. **Check the documentation** - Most questions are answered here
-2. **Search existing issues** - Someone might have asked the same question
-3. **Create a new issue** - Use the appropriate issue template
-4. **Join the community** - Connect with other users and contributors
-
-### 📝 **Improve Documentation**
-
-Found an error or want to improve the documentation?
-
-- Submit a pull request with your changes
-- Open an issue to report documentation problems
-- Suggest new documentation topics
+---
+layout: default
+title: DataLoud - AI-Powered Document Chatbot
+permalink: /
+---
+
+<style>
+/* Hero Section Styles */
+.hero-section {
+    padding: 6rem 2rem;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, rgba(99, 102, 241, 0.05) 30%, rgba(0, 0, 0, 0) 70%);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background: white;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: #f3f4f6;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Features Section */
+.features-section {
+    padding: 6rem 2rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.feature-card p {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.nav-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.nav-card h3 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.nav-card h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-card h3 a:hover {
+    color: #60a5fa;
+}
+
+.nav-card p {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .features-title {
+        font-size: 2rem;
+    }
+}
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+    <h1 class="hero-title">
+        Transform Documents Into<br>Intelligent Conversations
+    </h1>
+    
+    <p class="hero-description">
+        Upload any document and chat with it using advanced AI. Get instant answers, summaries, and insights from your PDFs, Word docs, and more through natural language conversations.
+    </p>
+    
+    <div class="cta-buttons">
+        <a href="#demo" class="btn btn-secondary">
+            ▶️ Live Demo
+        </a>
+        <a href="#get-started" class="btn btn-primary">
+            Try Now
+        </a>
+    </div>
+</section>
+
+<!-- Quick Navigation -->
+<section class="features-section">
+    <div class="features-container">
+        <h2 class="features-title">🚀 Quick Navigation</h2>
+        
+        <div class="nav-grid">
+            <div class="nav-card">
+                <h3>📖 <a href="./README">Complete Overview</a></h3>
+                <p>Full project documentation with features and architecture</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3>👤 <a href="./USER_GUIDE">User Guide</a></h3>
+                <p>Get started in 3 simple steps and learn best practices</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3>📡 <a href="./API">API Reference</a></h3>
+                <p>Complete API documentation and integration examples</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3>🏗️ <a href="./ARCHITECTURE">Architecture</a></h3>
+                <p>Technical specifications and system design</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+    <div class="features-container">
+        <h2 class="features-title">Powerful Features</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3>Multi-Format Support</h3>
+                <p>PDF, Word, PowerPoint, Excel, and more</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Advanced AI</h3>
+                <p>RAG-based architecture for accurate responses</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure & Private</h3>
+                <p>Your documents stay private and secure</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Real-time Chat</h3>
+                <p>Instant responses and contextual understanding</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get Started Section -->
+<section class="features-section" id="get-started">
+    <div class="features-container">
+        <h2 class="features-title">Ready to Get Started?</h2>
+        
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+            <p style="color: #9ca3af; font-size: 1.2rem; margin-bottom: 3rem;">
+                Join thousands of users who are already transforming how they interact with documents.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="./USER_GUIDE" class="btn btn-primary">
+                    📖 User Guide
+                </a>
+                <a href="./API" class="btn btn-secondary">
+                    🔧 API Docs
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Add smooth scrolling
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Add parallax effect
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('#hero');
+        if (hero) {
+            hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+    });
+});
+</script>
+    <p>Complete API documentation for developers</p>
+  </div>
+  
+  <div class="nav-card">
+    <h3>🏗️ <a href="./ARCHITECTURE">Architecture</a></h3>
+    <p>Technical system design and components</p>
+  </div>
+  
+  <div class="nav-card">
+    <h3>🚀 <a href="./DEPLOYMENT">Deployment</a></h3>
+    <p>Production deployment guide and setup</p>
+  </div>
+  
+  <div class="nav-card">
+    <h3>🤝 <a href="./CONTRIBUTING">Contributing</a></h3>
+    <p>Guidelines for developers and contributors</p>
+  </div>
+</div>
+
+## ✨ Key Features
+
+### 🔍 **Smart Document Processing**
+- **Multi-format Support**: PDF, CSV, JSON documents
+- **Intelligent Chunking**: Advanced text segmentation
+- **Vector Embeddings**: Semantic search capabilities
+- **Real-time Processing**: Fast document analysis
+
+### 💬 **Advanced AI Chat**
+- **Natural Language**: Ask questions in plain English
+- **Context Awareness**: Maintains conversation flow
+- **Source Citations**: References document sections
+- **Multi-turn Dialogues**: Complex conversations
+
+### 🎨 **Modern Interface**
+- **Responsive Design**: Works on all devices
+- **Real-time Updates**: Live chat experience
+- **Dark/Light Mode**: Customizable themes
+- **Drag & Drop**: Easy file uploads
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Frontend      │    │    Backend      │    │   Database      │
+│   (Next.js)     │◄──►│   (Flask)       │◄──►│  (Supabase)     │
+│                 │    │                 │    │                 │
+│ • React UI      │    │ • RAG Pipeline  │    │ • PostgreSQL    │
+│ • TypeScript    │    │ • Vector Store  │    │ • Vector Ext    │
+│ • Tailwind CSS  │    │ • AI Integration│    │ • RLS Policies  │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+```
+
+## 📊 Performance Highlights
+
+- **⚡ Fast Processing**: < 5 seconds for document upload
+- **🔍 Quick Search**: < 500ms vector similarity search
+- **👥 Scalable**: 100+ concurrent users supported
+- **🛡️ Secure**: Row-level security and data isolation
+
+## 🎯 Use Cases
+
+- **📚 Research**: Academic paper analysis
+- **💼 Business**: Corporate document review
+- **🎓 Education**: Study material interaction
+- **⚖️ Legal**: Contract and document analysis
+- **✍️ Content**: Reference material organization
+
+## 🔗 Repository Links
+
+- **📂 [View on GitHub](https://github.com/PaoloAstrino/DataLoud_public)**
+- **📋 [Complete Documentation](./DOCUMENTATION_INDEX)**
+- **🌟 [Star this Project](https://github.com/PaoloAstrino/DataLoud_public)**
 
 ---
 
-**Welcome to the AI-Powered Document Chatbot community!** 🎉
+<div class="footer-section">
+  <p><strong>🎉 Ready to explore?</strong> Start with the <a href="./USER_GUIDE">User Guide</a> or dive into the <a href="./ARCHITECTURE">technical architecture</a>!</p>
+  
+  <p><em>This project showcases production-ready AI/ML development with modern web technologies.</em></p>
+</div>
 
-This documentation is constantly evolving. If you have suggestions for improvements or find any issues, please don't hesitate to contribute!
+<style>
+.navigation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.nav-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 20px;
+  background: #f6f8fa;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nav-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.nav-card h3 a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.nav-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.nav-card p {
+  margin-bottom: 0;
+  color: #586069;
+}
+
+.footer-section {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #e1e4e8;
+  margin-top: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-card {
+    background: #161b22;
+    border-color: #30363d;
+  }
+  
+  .nav-card p {
+    color: #8b949e;
+  }
+  
+  .footer-section {
+    border-top-color: #30363d;
+  }
+}
+</style>

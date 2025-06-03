@@ -37,3 +37,14 @@ out/
 # Backup files
 *.bak
 *.backup
+
+# Design files and mockups
+design/
+*.psd
+*.sketch
+*.fig
+*.xd
+
+# Project files and archives
+crop-studio-landing.zip
+crop-studio-landing/
