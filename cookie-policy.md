@@ -163,7 +163,7 @@ If you have questions about our use of cookies, please contact us:
 
 ## Additional Resources
 
-- [Privacy Policy](/DataLoud_public/privacy-policy)
+- <a href="#" onclick="showPrivacyModal(event)">Privacy Policy</a>
 - [Google Analytics Privacy Policy](https://policies.google.com/privacy)
 - [EU Cookie Law Information](https://ec.europa.eu/info/cookies_en)
 

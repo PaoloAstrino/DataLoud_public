@@ -15,20 +15,21 @@ title: Architecture Overview - DataLoud
 
         <h2>Architecture Diagram</h2>
         <pre><code>┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend      │    │    Backend      │    │   Data Layer    │
-│   (Next.js 14)  │◄──►│  (Python Flask) │◄──►│   (Supabase)    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         │                       │                       │
-    ┌────▼────┐              ┌───▼───┐              ┌────▼────┐
-    │ React   │              │ RAG   │              │Vector   │
-    │Components│              │Engine │              │Database │
-    └─────────┘              └───────┘              └─────────┘
-         │                       │                       │
-    ┌────▼────┐              ┌───▼───┐              ┌────▼────┐
-    │Tailwind │              │AI/ML  │              │Chat     │
-    │   CSS   │              │Models │              │History  │
-    └─────────┘              └───────┘              └─────────┘</code></pre>
+
+│ Frontend │ │ Backend │ │ Data Layer │
+│ (Next.js 14) │◄──►│ (Python Flask) │◄──►│ (Supabase) │
+└─────────────────┘ └─────────────────┘ └─────────────────┘
+│ │ │
+│ │ │
+┌────▼────┐ ┌───▼───┐ ┌────▼────┐
+│ React │ │ RAG │ │Vector │
+│Components│ │Engine │ │Database │
+└─────────┘ └───────┘ └─────────┘
+│ │ │
+┌────▼────┐ ┌───▼───┐ ┌────▼────┐
+│Tailwind │ │AI/ML │ │Chat │
+│ CSS │ │Models │ │History │
+└─────────┘ └───────┘ └─────────┘</code></pre>
 
         <h2>Component Breakdown</h2>
 
@@ -92,14 +93,17 @@ title: Architecture Overview - DataLoud
 
         <h3>1. Document Upload Process</h3>
         <pre><code>User Upload → Frontend Validation → Backend Processing →
+
 Text Extraction → Chunking → Embeddings → Vector Storage</code></pre>
 
         <h3>2. Chat Query Process</h3>
         <pre><code>User Query → Frontend → Backend API → Vector Search →
+
 Context Retrieval → AI Processing → Response Generation → Frontend Display</code></pre>
 
         <h3>3. Feedback Loop</h3>
         <pre><code>User Feedback → Frontend Capture → Backend API →
+
 Database Storage → Analytics Processing</code></pre>
 
         <h2>Security Architecture</h2>
@@ -154,4 +158,5 @@ Database Storage → Analytics Processing</code></pre>
         </ul>
 
     </div>
+
 </div>

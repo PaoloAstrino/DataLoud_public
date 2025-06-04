@@ -1,4 +1,75 @@
-<!-- GDPR Cookie Consent Banner -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Modal Test - DataLoud</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: white;
+            margin: 0;
+            padding: 40px;
+            min-height: 100vh;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .test-button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        .test-button:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔒 Privacy Modal Test</h1>
+        <p>Test the privacy policy overlay functionality</p>
+        
+        <button onclick="showPrivacyModal(event)" class="test-button">
+            Open Privacy Policy Overlay
+        </button>
+        
+        <button onclick="manageCookies()" class="test-button">
+            Open Cookie Settings
+        </button>
+    </div>
+
+    <!-- Footer with Privacy Link -->
+    <footer style="background: rgba(0, 0, 0, 0.9); border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 0; text-align: center; margin-top: 60px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <p style="color: #666; margin: 0; font-size: 0.9rem;">
+                © 2025 DataLoud. 
+                <a href="#" onclick="showPrivacyModal(event)" style="color: #3b82f6; text-decoration: none; margin-left: 10px;">Privacy Policy</a> |
+                <button onclick="manageCookies()" style="background: none; border: none; color: #3b82f6; cursor: pointer; text-decoration: underline; margin-left: 10px;">Cookie Preferences</button>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Include the cookie consent component -->
+    <!-- GDPR Cookie Consent Banner -->
 <div id="cookie-banner" style="display: none;">
   <div class="cookie-banner-content">
     <div class="cookie-banner-text">
@@ -55,7 +126,8 @@
       <div class="privacy-modal-header">
         <h3>🔒 Privacy & Data Protection</h3>
         <button onclick="closePrivacyModal()" class="privacy-close">&times;</button>
-      </div>      <div class="privacy-modal-content">
+      </div>
+      <div class="privacy-modal-content">
         <div class="privacy-overview">
           <div class="privacy-section">
             <h4>📊 Information We Collect</h4>
@@ -99,7 +171,8 @@
             <strong>EU Complaints:</strong> Contact your local data protection authority</p>
           </div>
         </div>
-          <div class="privacy-quick-actions">
+        
+        <div class="privacy-quick-actions">
           <div class="privacy-action-card">
             <h5>🎛️ Manage Your Preferences</h5>
             <p>Control which cookies you allow</p>
@@ -371,31 +444,6 @@
   }
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .cookie-banner-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .cookie-banner-buttons {
-    justify-content: center;
-  }
-  
-  .cookie-btn {
-    flex: 1;
-    min-width: 100px;
-  }
-  
-  .cookie-modal {
-    margin: 20px;
-    max-height: calc(100vh - 40px);
-  }
-    .cookie-modal-footer {
-    flex-direction: column;
-  }
-}
-
 /* Privacy Modal Styles */
 #privacy-modal {
   position: fixed;
@@ -615,8 +663,31 @@
   }
 }
 
-/* Mobile responsiveness for privacy modal */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
+  .cookie-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .cookie-banner-buttons {
+    justify-content: center;
+  }
+  
+  .cookie-btn {
+    flex: 1;
+    min-width: 100px;
+  }
+  
+  .cookie-modal {
+    margin: 20px;
+    max-height: calc(100vh - 40px);
+  }
+  
+  .cookie-modal-footer {
+    flex-direction: column;
+  }
+  
   .privacy-modal {
     margin: 20px;
     max-height: calc(100vh - 40px);
@@ -748,3 +819,6 @@ window.showPrivacyModal = showPrivacyModal;
 window.closePrivacyModal = closePrivacyModal;
 window.openCookieSettings = openCookieSettings;
 </script>
+
+</body>
+</html>
