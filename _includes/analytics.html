@@ -1,0 +1,122 @@
+<!-- Google Analytics 4 (GA4) -->
+{% if site.google_analytics and jekyll.environment == 'production' %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.google_analytics }}', {
+    {% if site.analytics.google.anonymize_ip %}anonymize_ip: true,{% endif %}
+    {% if site.analytics.google.respect_dnt %}respect_dnt: true,{% endif %}
+    cookie_flags: 'secure;samesite=strict',
+    send_page_view: true
+  });
+
+  // Custom event tracking for DataLoud
+  document.addEventListener('DOMContentLoaded', function() {
+    // Track navigation clicks
+    document.querySelectorAll('.nav-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'navigation_click', {
+          'event_category': 'Navigation',
+          'event_label': this.textContent.trim(),
+          'value': 1
+        });
+      });
+    });
+
+    // Track CTA button clicks
+    document.querySelectorAll('.btn-primary, .btn-secondary').forEach(function(button) {
+      button.addEventListener('click', function() {
+        gtag('event', 'cta_click', {
+          'event_category': 'CTA',
+          'event_label': this.textContent.trim(),
+          'value': 1
+        });
+      });
+    });
+
+    // Track documentation page views
+    if (window.location.pathname.includes('/API') || 
+        window.location.pathname.includes('/USER_GUIDE') || 
+        window.location.pathname.includes('/ARCHITECTURE') ||
+        window.location.pathname.includes('/DEPLOYMENT') ||
+        window.location.pathname.includes('/CONTRIBUTING')) {
+      gtag('event', 'documentation_view', {
+        'event_category': 'Documentation',
+        'event_label': window.location.pathname,
+        'value': 1
+      });
+    }
+
+    // Track scroll depth
+    let maxScroll = 0;
+    let scrollDepthMarks = [25, 50, 75, 100];
+    let scrollDepthReached = [];
+
+    window.addEventListener('scroll', function() {
+      let scrollPercent = Math.round((window.scrollY + window.innerHeight) / document.body.scrollHeight * 100);
+      
+      if (scrollPercent > maxScroll) {
+        maxScroll = scrollPercent;
+        
+        scrollDepthMarks.forEach(function(mark) {
+          if (scrollPercent >= mark && !scrollDepthReached.includes(mark)) {
+            scrollDepthReached.push(mark);
+            gtag('event', 'scroll_depth', {
+              'event_category': 'Engagement',
+              'event_label': mark + '%',
+              'value': mark
+            });
+          }
+        });
+      }
+    });
+
+    // Track time on page
+    let startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+      let timeOnPage = Math.round((Date.now() - startTime) / 1000);
+      gtag('event', 'time_on_page', {
+        'event_category': 'Engagement',
+        'event_label': 'seconds',
+        'value': timeOnPage
+      });
+    });
+
+    // Track external link clicks
+    document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])').forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'external_link_click', {
+          'event_category': 'External Links',
+          'event_label': this.href,
+          'value': 1
+        });
+      });
+    });
+
+    // Track GitHub repository clicks
+    document.querySelectorAll('a[href*="github.com/PaoloAstrino/DataLoud"]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'github_click', {
+          'event_category': 'Repository',
+          'event_label': 'GitHub DataLoud',
+          'value': 1
+        });
+      });
+    });
+  });
+</script>
+
+<!-- Privacy Notice Script -->
+<script>
+  // Check for Do Not Track
+  if (navigator.doNotTrack === "1" || window.doNotTrack === "1") {
+    console.log("Analytics disabled due to Do Not Track setting");
+    // Disable analytics if DNT is enabled
+    window['ga-disable-{{ site.google_analytics }}'] = true;
+  }
+</script>
+{% endif %}

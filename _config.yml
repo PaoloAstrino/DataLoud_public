@@ -19,6 +19,14 @@ baseurl: "/DataLoud_public"
 twitter_username: your_twitter_handle
 linkedin_username: your_linkedin_profile
 
+# Analytics
+google_analytics: "G-GP36GD2VDX"
+analytics:
+  google:
+    tracking_id: "G-GP36GD2VDX"
+    anonymize_ip: true
+    respect_dnt: true  # Respect Do Not Track headers
+
 # Navigation structure
 navigation:
   - title: "Home"
@@ -33,6 +41,8 @@ navigation:
     url: "/ARCHITECTURE"
   - title: "Contributing"
     url: "/CONTRIBUTING"
+  - title: "Privacy Policy"
+    url: "/privacy-policy"
 
 # Plugins
 plugins:

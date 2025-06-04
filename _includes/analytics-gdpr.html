@@ -1,0 +1,141 @@
+<!-- GDPR-Compliant Google Analytics 4 -->
+{% if site.google_analytics and jekyll.environment == 'production' %}
+<script>
+  // GDPR Consent Management
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  
+  // Check for existing consent
+  const cookieConsent = localStorage.getItem('cookieConsent');
+  const consentDate = localStorage.getItem('consentDate');
+  const consentExpiry = 365 * 24 * 60 * 60 * 1000; // 365 days in milliseconds
+  
+  // Check if consent is still valid (not expired)
+  const isConsentValid = consentDate && (Date.now() - parseInt(consentDate)) < consentExpiry;
+  
+  if (cookieConsent === 'accepted' && isConsentValid) {
+    // Initialize Google Analytics with consent
+    loadGoogleAnalytics();
+  }
+  
+  function loadGoogleAnalytics() {
+    // Load GA4 script
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}';
+    document.head.appendChild(script);
+    
+    script.onload = function() {
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}', {
+        anonymize_ip: true,
+        cookie_domain: 'auto',
+        cookie_flags: 'SameSite=Strict;Secure',
+        send_page_view: true,
+        cookie_expires: 365 * 24 * 60 * 60, // 365 days in seconds
+        storage: 'granted',
+        analytics_storage: 'granted',
+        ad_storage: 'denied' // We don't use ads, so deny ad storage
+      });
+      
+      // Initialize custom event tracking
+      initializeEventTracking();
+    };
+  }
+  
+  function initializeEventTracking() {
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupEventTracking);
+    } else {
+      setupEventTracking();
+    }
+  }
+  
+  function setupEventTracking() {
+    // Track navigation clicks
+    document.querySelectorAll('.nav-link, a[href^="/"], a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'navigation_click', {
+          'event_category': 'Navigation',
+          'event_label': this.textContent.trim() || this.href,
+          'value': 1
+        });
+      });
+    });
+
+    // Track CTA button clicks
+    document.querySelectorAll('.btn-primary, .btn-secondary, .cta-button').forEach(function(button) {
+      button.addEventListener('click', function() {
+        gtag('event', 'cta_click', {
+          'event_category': 'CTA',
+          'event_label': this.textContent.trim(),
+          'value': 1
+        });
+      });
+    });
+
+    // Track documentation page views
+    if (window.location.pathname.includes('/API') || 
+        window.location.pathname.includes('/USER_GUIDE') || 
+        window.location.pathname.includes('/ARCHITECTURE') ||
+        window.location.pathname.includes('/DEPLOYMENT') ||
+        window.location.pathname.includes('/CONTRIBUTING')) {
+      gtag('event', 'documentation_view', {
+        'event_category': 'Documentation',
+        'event_label': window.location.pathname,
+        'value': 1
+      });
+    }
+
+    // Track external links
+    document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])').forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'external_link_click', {
+          'event_category': 'External Links',
+          'event_label': this.href,
+          'value': 1
+        });
+      });
+    });
+
+    // Track scroll depth
+    let scrollDepths = [25, 50, 75, 100];
+    let scrolledDepths = [];
+    
+    window.addEventListener('scroll', function() {
+      let scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+      
+      scrollDepths.forEach(function(depth) {
+        if (scrollPercent >= depth && scrolledDepths.indexOf(depth) === -1) {
+          scrolledDepths.push(depth);
+          gtag('event', 'scroll_depth', {
+            'event_category': 'Engagement',
+            'event_label': depth + '%',
+            'value': depth
+          });
+        }
+      });
+    });
+  }
+  
+  // Global functions for consent management
+  window.acceptCookies = function() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    localStorage.setItem('consentDate', Date.now().toString());
+    document.getElementById('cookie-banner').style.display = 'none';
+    loadGoogleAnalytics();
+  };
+  
+  window.declineCookies = function() {
+    localStorage.setItem('cookieConsent', 'declined');
+    localStorage.setItem('consentDate', Date.now().toString());
+    document.getElementById('cookie-banner').style.display = 'none';
+    // Don't load analytics
+  };
+  
+  window.manageCookies = function() {
+    document.getElementById('cookie-settings').style.display = 'block';
+  };
+</script>
+{% endif %}
