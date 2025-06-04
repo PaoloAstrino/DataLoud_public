@@ -3,7 +3,7 @@
   <div class="cookie-banner-content">
     <div class="cookie-banner-text">
       <h3>🍪 Cookie Consent</h3>
-      <p>We use cookies to enhance your experience and analyze site traffic. By continuing to use this site, you consent to our use of cookies. <a href="/DataLoud_public/privacy-policy" class="cookie-link">Learn more</a></p>
+      <p>We use cookies to enhance your experience and analyze site traffic. By continuing to use this site, you consent to our use of cookies. <a href="#" onclick="showPrivacyModal(event)" class="cookie-link">Learn more</a></p>
     </div>
     <div class="cookie-banner-buttons">
       <button onclick="acceptCookies()" class="cookie-btn cookie-accept">Accept All</button>
@@ -44,6 +44,54 @@
       <div class="cookie-modal-footer">
         <button onclick="savePreferences()" class="cookie-btn cookie-accept">Save Preferences</button>
         <button onclick="acceptAllCookies()" class="cookie-btn cookie-manage">Accept All</button>
+      </div>
+    </div>  </div>
+</div>
+
+<!-- Privacy Policy Overview Modal -->
+<div id="privacy-modal" style="display: none;">
+  <div class="privacy-modal-overlay">
+    <div class="privacy-modal">
+      <div class="privacy-modal-header">
+        <h3>🔒 Privacy & Data Protection</h3>
+        <button onclick="closePrivacyModal()" class="privacy-close">&times;</button>
+      </div>
+      <div class="privacy-modal-content">
+        <div class="privacy-overview">
+          <div class="privacy-section">
+            <h4>🍪 What Cookies We Use</h4>
+            <p>We use essential cookies for website functionality and optional analytics cookies to understand how you use our site. All data is anonymized and never sold to third parties.</p>
+          </div>
+          
+          <div class="privacy-section">
+            <h4>🔐 Your Data Rights</h4>
+            <p>Under GDPR, you have the right to access, rectify, or delete your data. You can withdraw consent for analytics cookies at any time through our cookie preferences.</p>
+          </div>
+          
+          <div class="privacy-section">
+            <h4>🛡️ How We Protect You</h4>
+            <p>All data transmission uses HTTPS encryption. We anonymize IP addresses, respect Do Not Track headers, and automatically delete analytics data after 365 days.</p>
+          </div>
+          
+          <div class="privacy-section">
+            <h4>🤝 Third-Party Services</h4>
+            <p>We use Google Analytics 4 with privacy-enhanced settings. GitHub Pages hosts our site. No data is shared with advertisers or marketing companies.</p>
+          </div>
+        </div>
+        
+        <div class="privacy-quick-actions">
+          <div class="privacy-action-card">
+            <h5>🎛️ Manage Your Preferences</h5>
+            <p>Control which cookies you allow</p>
+            <button onclick="openCookieSettings()" class="privacy-action-btn">Cookie Settings</button>
+          </div>
+          
+          <div class="privacy-action-card">
+            <h5>📋 Full Privacy Policy</h5>
+            <p>Read our complete privacy policy</p>
+            <a href="/DataLoud_public/privacy-policy" class="privacy-action-btn" onclick="closePrivacyModal()">Read Full Policy</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -323,9 +371,232 @@
     margin: 20px;
     max-height: calc(100vh - 40px);
   }
-  
-  .cookie-modal-footer {
+    .cookie-modal-footer {
     flex-direction: column;
+  }
+}
+
+/* Privacy Modal Styles */
+#privacy-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10001;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.privacy-modal-overlay {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.privacy-modal {
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  animation: slideInUp 0.4s ease-out;
+}
+
+.privacy-modal-header {
+  padding: 24px 24px 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.privacy-modal-header h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.privacy-close {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.privacy-close:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.privacy-modal-content {
+  padding: 24px;
+}
+
+.privacy-overview {
+  margin-bottom: 32px;
+}
+
+.privacy-section {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.privacy-section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.privacy-section h4 {
+  color: white;
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.privacy-section p {
+  color: #cccccc;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.privacy-quick-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.privacy-action-card {
+  padding: 20px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.privacy-action-card:hover {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.5);
+  transform: translateY(-2px);
+}
+
+.privacy-action-card h5 {
+  color: white;
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.privacy-action-card p {
+  color: #cccccc;
+  margin: 0 0 16px 0;
+  font-size: 0.9rem;
+}
+
+.privacy-action-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.privacy-action-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness for privacy modal */
+@media (max-width: 768px) {
+  .privacy-modal {
+    margin: 20px;
+    max-height: calc(100vh - 40px);
+    border-radius: 12px;
+  }
+  
+  .privacy-modal-header {
+    padding: 20px 20px 16px 20px;
+  }
+  
+  .privacy-modal-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .privacy-modal-content {
+    padding: 20px;
+  }
+  
+  .privacy-quick-actions {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .privacy-section {
+    padding: 16px;
   }
 }
 </style>
@@ -392,4 +663,43 @@ window.manageCookies = function() {
   document.getElementById('analytics-toggle').checked = analyticsEnabled;
   document.getElementById('cookie-settings').style.display = 'block';
 };
+
+// Privacy Modal Functions
+function showPrivacyModal(event) {
+  event.preventDefault();
+  document.getElementById('privacy-modal').style.display = 'block';
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closePrivacyModal() {
+  document.getElementById('privacy-modal').style.display = 'none';
+  document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
+function openCookieSettings() {
+  closePrivacyModal();
+  window.manageCookies();
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(event) {
+  const privacyModal = document.getElementById('privacy-modal');
+  const privacyModalContent = document.querySelector('.privacy-modal');
+  
+  if (event.target === privacyModal) {
+    closePrivacyModal();
+  }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closePrivacyModal();
+  }
+});
+
+// Make functions globally available
+window.showPrivacyModal = showPrivacyModal;
+window.closePrivacyModal = closePrivacyModal;
+window.openCookieSettings = openCookieSettings;
 </script>

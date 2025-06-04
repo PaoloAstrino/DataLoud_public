@@ -25,7 +25,7 @@ analytics:
   google:
     tracking_id: "G-GP36GD2VDX"
     anonymize_ip: true
-    respect_dnt: true  # Respect Do Not Track headers
+    respect_dnt: true # Respect Do Not Track headers
 
 # Navigation structure
 navigation:
@@ -67,7 +67,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    css_class: 'highlight'
+    css_class: "highlight"
     span:
       line_numbers: false
     block:

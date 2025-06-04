@@ -33,11 +33,13 @@ When you visit our website, we may automatically collect certain information abo
 We use cookies and similar tracking technologies to enhance your experience and analyze site traffic. These include:
 
 #### Essential Cookies
+
 - **Purpose:** Enable basic website functionality and security
 - **Duration:** Session-based or until browser closure
 - **Legal Basis:** Legitimate interest (necessary for website operation)
 
 #### Analytics Cookies (Google Analytics 4)
+
 - **Purpose:** Understand user behavior and improve our website
 - **Data Collected:** Anonymized usage statistics, page views, user interactions
 - **Duration:** Up to 365 days
@@ -62,6 +64,7 @@ Under the General Data Protection Regulation (GDPR), we process your personal da
 ## Data Sharing and Third Parties
 
 ### Google Analytics
+
 We use Google Analytics 4 to analyze website usage. Google may process your data according to their privacy policy. We have implemented:
 
 - IP anonymization
@@ -72,6 +75,7 @@ We use Google Analytics 4 to analyze website usage. Google may process your data
 **Google's Privacy Policy:** [https://policies.google.com/privacy](https://policies.google.com/privacy)
 
 ### GitHub Pages
+
 Our website is hosted on GitHub Pages. GitHub may collect technical information as described in their privacy policy.
 
 **GitHub's Privacy Policy:** [https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
@@ -81,24 +85,31 @@ Our website is hosted on GitHub Pages. GitHub may collect technical information 
 If you are located in the European Union, you have the following rights:
 
 ### Right to Access
+
 You can request information about the personal data we process about you.
 
 ### Right to Rectification
+
 You can request correction of inaccurate personal data.
 
 ### Right to Erasure
+
 You can request deletion of your personal data in certain circumstances.
 
 ### Right to Restrict Processing
+
 You can request limitation of processing in certain circumstances.
 
 ### Right to Data Portability
+
 You can request transfer of your data to another service provider.
 
 ### Right to Object
+
 You can object to processing based on legitimate interests.
 
 ### Right to Withdraw Consent
+
 You can withdraw consent for analytics cookies at any time using our cookie preference center.
 
 ## Cookie Management
@@ -106,16 +117,20 @@ You can withdraw consent for analytics cookies at any time using our cookie pref
 You can manage your cookie preferences in several ways:
 
 ### Our Cookie Preference Center
+
 Use the "Manage Cookies" button in our cookie banner to control analytics cookies.
 
 ### Browser Settings
+
 Most browsers allow you to:
+
 - Block all cookies
 - Accept only first-party cookies
 - Delete existing cookies
 - Receive notifications before cookies are set
 
 ### Do Not Track
+
 We respect the Do Not Track browser header and will not load analytics scripts when this setting is enabled.
 
 ## Data Retention
@@ -157,6 +172,7 @@ If you have questions about this privacy policy or want to exercise your rights,
 **GitHub:** [https://github.com/PaoloAstrino](https://github.com/PaoloAstrino)
 
 For GDPR-related requests, please include:
+
 - Your full name
 - The specific right you wish to exercise
 - Sufficient information to identify your data
@@ -170,6 +186,6 @@ If you believe we have not handled your personal data properly, you have the rig
 
 ---
 
-*This privacy policy is designed to comply with GDPR requirements and best practices for data protection.*
+_This privacy policy is designed to comply with GDPR requirements and best practices for data protection._
 
 </div>
