@@ -169,6 +169,28 @@ permalink: /
     font-size: 0.9rem;
 }
 
+.footer-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 6rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section p {
+    color: #9ca3af;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .hero-section {
         padding: 4rem 1rem;
@@ -181,6 +203,10 @@ permalink: /
     
     .features-title {
         font-size: 2rem;
+    }
+    
+    .features-section {
+        padding: 4rem 1rem;
     }
 }
 </style>
@@ -196,11 +222,11 @@ permalink: /
     </p>
     
     <div class="cta-buttons">
-        <a href="#demo" class="btn btn-secondary">
-            ▶️ Live Demo
+        <a href="./USER_GUIDE" class="btn btn-primary">
+            📖 Get Started
         </a>
-        <a href="#get-started" class="btn btn-primary">
-            Try Now
+        <a href="./API" class="btn btn-secondary">
+            🔧 API Docs
         </a>
     </div>
 </section>
@@ -230,6 +256,16 @@ permalink: /
                 <h3>🏗️ <a href="./ARCHITECTURE">Architecture</a></h3>
                 <p>Technical specifications and system design</p>
             </div>
+            
+            <div class="nav-card">
+                <h3>🚀 <a href="./DEPLOYMENT">Deployment</a></h3>
+                <p>Production deployment guide and setup</p>
+            </div>
+            
+            <div class="nav-card">
+                <h3>🤝 <a href="./CONTRIBUTING">Contributing</a></h3>
+                <p>Guidelines for developers and contributors</p>
+            </div>
         </div>
     </div>
 </section>
@@ -237,19 +273,25 @@ permalink: /
 <!-- Features Section -->
 <section class="features-section" id="features">
     <div class="features-container">
-        <h2 class="features-title">Powerful Features</h2>
+        <h2 class="features-title">✨ Key Features</h2>
         
         <div class="features-grid">
             <div class="feature-card">
-                <div class="feature-icon">📄</div>
-                <h3>Multi-Format Support</h3>
-                <p>PDF, Word, PowerPoint, Excel, and more</p>
+                <div class="feature-icon">🔍</div>
+                <h3>Smart Document Processing</h3>
+                <p>Multi-format Support: PDF, CSV, JSON documents</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">🧠</div>
-                <h3>Advanced AI</h3>
-                <p>RAG-based architecture for accurate responses</p>
+                <h3>Advanced RAG Architecture</h3>
+                <p>Retrieval-Augmented Generation for accurate responses</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Natural Language Chat</h3>
+                <p>Conversational interface with context awareness</p>
             </div>
             
             <div class="feature-card">
@@ -260,8 +302,62 @@ permalink: /
             
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
-                <h3>Real-time Chat</h3>
-                <p>Instant responses and contextual understanding</p>
+                <h3>Real-time Processing</h3>
+                <p>Fast document analysis and instant responses</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Analytics Dashboard</h3>
+                <p>Track usage patterns and document insights</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Architecture Overview -->
+<section class="features-section">
+    <div class="features-container">
+        <h2 class="features-title">🏗️ System Architecture</h2>
+        
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; padding: 2rem; max-width: 800px; margin: 0 auto;">
+                <pre style="color: #9ca3af; font-family: monospace; margin: 0; text-align: left; overflow-x: auto;">
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Frontend      │    │    Backend      │    │   Database      │
+│   (Next.js)     │◄──►│   (Flask)       │◄──►│  (Supabase)     │
+│                 │    │                 │    │                 │
+│ • React UI      │    │ • RAG Pipeline  │    │ • PostgreSQL    │
+│ • TypeScript    │    │ • Vector Store  │    │ • Vector Ext    │
+│ • Tailwind CSS  │    │ • AI Integration│    │ • RLS Policies  │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                </pre>
+            </div>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Processing</h3>
+                <p>< 5 seconds for document upload and analysis</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Quick Search</h3>
+                <p>< 500ms vector similarity search</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Scalable</h3>
+                <p>100+ concurrent users supported</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Secure</h3>
+                <p>Row-level security and data isolation</p>
             </div>
         </div>
     </div>
@@ -284,10 +380,19 @@ permalink: /
                 <a href="./API" class="btn btn-secondary">
                     🔧 API Docs
                 </a>
+                <a href="https://github.com/PaoloAstrino/DataLoud_public" class="btn btn-secondary">
+                    ⭐ Star on GitHub
+                </a>
             </div>
         </div>
     </div>
 </section>
+
+<div class="footer-section">
+    <p><strong>🎉 Ready to explore?</strong> Start with the <a href="./USER_GUIDE">User Guide</a> or dive into the <a href="./ARCHITECTURE">technical architecture</a>!</p>
+    
+    <p><em>This project showcases production-ready AI/ML development with modern web technologies.</em></p>
+</div>
 
 <script>
 // Add smooth scrolling
@@ -315,146 +420,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-    <p>Complete API documentation for developers</p>
-  </div>
-  
-  <div class="nav-card">
-    <h3>🏗️ <a href="./ARCHITECTURE">Architecture</a></h3>
-    <p>Technical system design and components</p>
-  </div>
-  
-  <div class="nav-card">
-    <h3>🚀 <a href="./DEPLOYMENT">Deployment</a></h3>
-    <p>Production deployment guide and setup</p>
-  </div>
-  
-  <div class="nav-card">
-    <h3>🤝 <a href="./CONTRIBUTING">Contributing</a></h3>
-    <p>Guidelines for developers and contributors</p>
-  </div>
-</div>
-
-## ✨ Key Features
-
-### 🔍 **Smart Document Processing**
-- **Multi-format Support**: PDF, CSV, JSON documents
-- **Intelligent Chunking**: Advanced text segmentation
-- **Vector Embeddings**: Semantic search capabilities
-- **Real-time Processing**: Fast document analysis
-
-### 💬 **Advanced AI Chat**
-- **Natural Language**: Ask questions in plain English
-- **Context Awareness**: Maintains conversation flow
-- **Source Citations**: References document sections
-- **Multi-turn Dialogues**: Complex conversations
-
-### 🎨 **Modern Interface**
-- **Responsive Design**: Works on all devices
-- **Real-time Updates**: Live chat experience
-- **Dark/Light Mode**: Customizable themes
-- **Drag & Drop**: Easy file uploads
-
-## 🏗️ System Architecture
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend      │    │    Backend      │    │   Database      │
-│   (Next.js)     │◄──►│   (Flask)       │◄──►│  (Supabase)     │
-│                 │    │                 │    │                 │
-│ • React UI      │    │ • RAG Pipeline  │    │ • PostgreSQL    │
-│ • TypeScript    │    │ • Vector Store  │    │ • Vector Ext    │
-│ • Tailwind CSS  │    │ • AI Integration│    │ • RLS Policies  │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
-
-## 📊 Performance Highlights
-
-- **⚡ Fast Processing**: < 5 seconds for document upload
-- **🔍 Quick Search**: < 500ms vector similarity search
-- **👥 Scalable**: 100+ concurrent users supported
-- **🛡️ Secure**: Row-level security and data isolation
-
-## 🎯 Use Cases
-
-- **📚 Research**: Academic paper analysis
-- **💼 Business**: Corporate document review
-- **🎓 Education**: Study material interaction
-- **⚖️ Legal**: Contract and document analysis
-- **✍️ Content**: Reference material organization
-
-## 🔗 Repository Links
-
-- **📂 [View on GitHub](https://github.com/PaoloAstrino/DataLoud_public)**
-- **📋 [Complete Documentation](./DOCUMENTATION_INDEX)**
-- **🌟 [Star this Project](https://github.com/PaoloAstrino/DataLoud_public)**
-
----
-
-<div class="footer-section">
-  <p><strong>🎉 Ready to explore?</strong> Start with the <a href="./USER_GUIDE">User Guide</a> or dive into the <a href="./ARCHITECTURE">technical architecture</a>!</p>
-  
-  <p><em>This project showcases production-ready AI/ML development with modern web technologies.</em></p>
-</div>
-
-<style>
-.navigation-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin: 30px 0;
-}
-
-.nav-card {
-  border: 1px solid #e1e4e8;
-  border-radius: 8px;
-  padding: 20px;
-  background: #f6f8fa;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.nav-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.nav-card h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.nav-card h3 a {
-  text-decoration: none;
-  color: #0366d6;
-}
-
-.nav-card h3 a:hover {
-  text-decoration: underline;
-}
-
-.nav-card p {
-  margin-bottom: 0;
-  color: #586069;
-}
-
-.footer-section {
-  text-align: center;
-  padding: 30px 0;
-  border-top: 1px solid #e1e4e8;
-  margin-top: 50px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav-card {
-    background: #161b22;
-    border-color: #30363d;
-  }
-  
-  .nav-card p {
-    color: #8b949e;
-  }
-  
-  .footer-section {
-    border-top-color: #30363d;
-  }
-}
-</style>
