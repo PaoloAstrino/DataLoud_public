@@ -14,7 +14,7 @@ description: "Privacy Policy for AI-Powered Document Chatbot - Learn how we prot
     <p><strong>Last updated:</strong> {{ site.time | date: "%B %d, %Y" }}</p>
 
     <h2>Introduction</h2>
-    
+
     <p>DataLoud ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and protect your information when you visit our website <a href="https://paoloastrino.github.io/DataLoud_public">https://paoloastrino.github.io/DataLoud_public</a>.</p>
 
     <h2>Information We Collect</h2>
@@ -71,7 +71,7 @@ description: "Privacy Policy for AI-Powered Document Chatbot - Learn how we prot
     <h2>Data Sharing and Third Parties</h2>
 
     <h3>Google Analytics</h3>
-    
+
     <p>We use Google Analytics 4 to analyze website usage. Google may process your data according to their privacy policy. We have implemented:</p>
 
     <ul>
@@ -180,7 +180,7 @@ description: "Privacy Policy for AI-Powered Document Chatbot - Learn how we prot
 
     <h2>Contact Information</h2>
     <p>If you have questions about this privacy policy or want to exercise your rights, please contact us:</p>
-    
+
     <div class="contact-info">
       <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
       <p><strong>GitHub:</strong> <a href="https://github.com/PaoloAstrino" target="_blank" rel="noopener noreferrer">https://github.com/PaoloAstrino</a></p>
@@ -196,7 +196,7 @@ description: "Privacy Policy for AI-Powered Document Chatbot - Learn how we prot
 
     <h2>Complaint Rights</h2>
     <p>If you believe we have not handled your personal data properly, you have the right to lodge a complaint with your local data protection authority.</p>
-    
+
     <p><strong>EU Data Protection Authorities:</strong> <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank" rel="noopener noreferrer">https://edpb.europa.eu/about-edpb/board/members_en</a></p>
 
     <div class="policy-footer">

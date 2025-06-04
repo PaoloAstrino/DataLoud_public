@@ -439,7 +439,7 @@
 }
 
 .privacy-content ul li::before {
-  content: '•';
+  content: "•";
   color: #3b82f6;
   font-size: 1.2rem;
   position: absolute;
@@ -635,30 +635,30 @@
   .privacy-content {
     font-size: 0.95rem;
   }
-  
+
   .privacy-content h2 {
     font-size: 1.5rem;
     margin-top: 2rem;
   }
-  
+
   .privacy-content h3 {
     font-size: 1.15rem;
     margin-top: 1.5rem;
   }
-  
+
   .privacy-content h4 {
     font-size: 1.15rem;
   }
-  
+
   .rights-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .right-item {
     padding: 1.25rem;
   }
-  
+
   .contact-info {
     padding: 1.25rem;
   }
