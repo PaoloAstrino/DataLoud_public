@@ -48,3 +48,18 @@ design/
 # Project files and archives
 crop-studio-landing.zip
 crop-studio-landing/
+
+# Test files
+*test.html
+*-test.html
+test-*.html
+
+# Jekyll specific
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# New/temporary document files
+*_new.md
+*-new.md

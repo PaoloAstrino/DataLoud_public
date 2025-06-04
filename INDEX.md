@@ -1,5 +1,5 @@
 ---
-layout: default
+layout    background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.144) 0%, rgba(99, 102, 241, 0.048) 30%, rgba(0, 0, 0, 0) 70%); default
 title: DataLoud - AI-Powered Document Chatbot
 permalink: /
 ---
@@ -9,7 +9,7 @@ permalink: /
 .hero-section {
     padding: 6rem 2rem;
     text-align: center;
-    background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, rgba(99, 102, 241, 0.05) 30%, rgba(0, 0, 0, 0) 70%);
+    background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.144) 0%, rgba(99, 102, 241, 0.048) 30%, rgba(0, 0, 0, 0) 70%);
     min-height: 80vh;
     display: flex;
     flex-direction: column;
