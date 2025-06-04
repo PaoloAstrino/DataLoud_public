@@ -1,3 +1,14 @@
+---
+layout: default
+title: DataLoud - Complete Overview
+---
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h1 class="page-title">🤖 AI-Powered Document Chatbot</h1>
+        <p class="page-description">Complete project overview and documentation</p>
+    </div>
+
 # 🤖 AI-Powered Document Chatbot
 
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-green?style=for-the-badge)]()

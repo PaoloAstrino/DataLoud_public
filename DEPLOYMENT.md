@@ -1,3 +1,14 @@
+---
+layout: default
+title: Deployment Guide - DataLoud
+---
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h1 class="page-title">🚀 Deployment Guide</h1>
+        <p class="page-description">Production deployment strategies and setup instructions</p>
+    </div>
+
 # 🚀 Deployment Guide
 
 ## Overview

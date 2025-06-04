@@ -1,3 +1,14 @@
+---
+layout: default
+title: Architecture Overview - DataLoud
+---
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h1 class="page-title">🏗️ System Architecture</h1>
+        <p class="page-description">Technical system design and component specifications</p>
+    </div>
+
 # 🏗️ System Architecture
 
 ## Overview

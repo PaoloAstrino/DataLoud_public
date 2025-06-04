@@ -1,3 +1,14 @@
+---
+layout: default
+title: Contributing Guidelines - DataLoud
+---
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h1 class="page-title">🤝 Contributing Guidelines</h1>
+        <p class="page-description">Guidelines for developers and contributors to the DataLoud project</p>
+    </div>
+
 # 🤝 Contributing Guidelines
 
 Thank you for your interest in contributing to the AI-Powered Document Chatbot! This document provides guidelines and information for contributors.

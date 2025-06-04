@@ -1,3 +1,14 @@
+---
+layout: default
+title: User Guide - DataLoud
+---
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h1 class="page-title">📚 User Guide</h1>
+        <p class="page-description">Learn how to get the most out of DataLoud's AI-powered document chatbot</p>
+    </div>
+
 # 📚 User Guide
 
 ## Getting Started

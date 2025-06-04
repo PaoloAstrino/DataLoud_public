@@ -1,3 +1,14 @@
+---
+layout: default
+title: API Documentation - DataLoud
+---
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h1 class="page-title">📡 API Documentation</h1>
+        <p class="page-description">Complete API reference for developers integrating with DataLoud</p>
+    </div>
+
 # 📡 API Documentation
 
 ## Overview

@@ -165,6 +165,183 @@
   color: white;
 }
 
+/* Content page wrapper and header styles */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  text-align: center;
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+.page-description {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Enhanced content styling for documentation pages */
+.content-wrapper h1,
+.content-wrapper h2,
+.content-wrapper h3,
+.content-wrapper h4 {
+  color: white;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-wrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+}
+
+.content-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #60a5fa;
+}
+
+.content-wrapper h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #d1d5db;
+}
+
+/* Enhanced code blocks for documentation */
+.content-wrapper pre {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+.content-wrapper pre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+}
+
+/* Improved list styling */
+.content-wrapper ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content-wrapper ul > li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.content-wrapper ul > li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+.content-wrapper ol {
+  counter-reset: item;
+  padding-left: 0;
+}
+
+.content-wrapper ol > li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  counter-increment: item;
+}
+
+.content-wrapper ol > li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  background: #60a5fa;
+  color: black;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Alert/Notice boxes */
+.content-wrapper .notice {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+}
+
+.content-wrapper .notice.info {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+  color: #dbeafe;
+}
+
+.content-wrapper .notice.warning {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: #f59e0b;
+  color: #fef3c7;
+}
+
+.content-wrapper .notice.error {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
+  color: #fecaca;
+}
+
+.content-wrapper .notice.success {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: #10b981;
+  color: #d1fae5;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .content-section {
@@ -186,5 +363,34 @@
   .content-section th,
   .content-section td {
     padding: 0.5rem;
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .page-header {
+    padding: 2rem 0 2rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-description {
+    font-size: 1rem;
+  }
+
+  .content-wrapper h1 {
+    font-size: 1.875rem;
+  }
+
+  .content-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-wrapper pre {
+    padding: 1rem;
+    margin: 1rem 0;
   }
 }
