@@ -9,16 +9,12 @@ title: Architecture Overview - DataLoud
         <p class="page-description">Technical system design and component specifications</p>
     </div>
 
-# 🏗️ System Architecture
+    <div class="privacy-content">
+        <h2>Overview</h2>
+        <p>The AI-Powered Document Chatbot follows a modern microservices architecture with clear separation between frontend, backend, and data layers.</p>
 
-## Overview
-
-The AI-Powered Document Chatbot follows a modern microservices architecture with clear separation between frontend, backend, and data layers.
-
-## Architecture Diagram
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+        <h2>Architecture Diagram</h2>
+        <pre><code>┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Frontend      │    │    Backend      │    │   Data Layer    │
 │   (Next.js 14)  │◄──►│  (Python Flask) │◄──►│   (Supabase)    │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
@@ -32,122 +28,130 @@ The AI-Powered Document Chatbot follows a modern microservices architecture with
     ┌────▼────┐              ┌───▼───┐              ┌────▼────┐
     │Tailwind │              │AI/ML  │              │Chat     │
     │   CSS   │              │Models │              │History  │
-    └─────────┘              └───────┘              └─────────┘
-```
+    └─────────┘              └───────┘              └─────────┘</code></pre>
 
-## Component Breakdown
+        <h2>Component Breakdown</h2>
 
-### 🖥️ Frontend Layer (Next.js 14)
+        <h3>🖥️ Frontend Layer (Next.js 14)</h3>
+        <ul>
+            <li><strong>Framework</strong>: Next.js 14 with App Router</li>
+            <li><strong>Styling</strong>: Tailwind CSS for responsive design</li>
+            <li><strong>Components</strong>:
+                <ul>
+                    <li>Chat interface with real-time messaging</li>
+                    <li>File upload component with drag-and-drop</li>
+                    <li>Document viewer and preview</li>
+                    <li>User feedback system</li>
+                    <li>Session management</li>
+                </ul>
+            </li>
+        </ul>
 
-- **Framework**: Next.js 14 with App Router
-- **Styling**: Tailwind CSS for responsive design
-- **Components**:
-  - Chat interface with real-time messaging
-  - File upload component with drag-and-drop
-  - Document viewer and preview
-  - User feedback system
-  - Session management
+        <p><strong>Key Directories:</strong></p>
+        <ul>
+            <li><code>/app</code> - Main application routes and pages</li>
+            <li><code>/components</code> - Reusable UI components</li>
+            <li><code>/lib</code> - Utility functions and configurations</li>
+            <li><code>/hooks</code> - Custom React hooks</li>
+            <li><code>/public</code> - Static assets</li>
+        </ul>
 
-**Key Directories:**
+        <h3>⚙️ Backend Layer (Python Flask)</h3>
+        <ul>
+            <li><strong>Framework</strong>: Flask with production WSGI server</li>
+            <li><strong>Processing Engine</strong>: Document analysis and RAG implementation</li>
+            <li><strong>API Layer</strong>: RESTful endpoints for frontend communication</li>
+            <li><strong>AI Integration</strong>: HuggingFace models for embeddings and processing</li>
+        </ul>
 
-- `/app` - Main application routes and pages
-- `/components` - Reusable UI components
-- `/lib` - Utility functions and configurations
-- `/hooks` - Custom React hooks
-- `/public` - Static assets
+        <p><strong>Core Modules:</strong></p>
+        <ul>
+            <li><code>unified_server.py</code> - Main Flask application server</li>
+            <li><code>hf_api_embeddings.py</code> - HuggingFace API integration</li>
+            <li><code>supabase_config.py</code> - Database configuration</li>
+            <li><code>health_check.py</code> - System monitoring</li>
+        </ul>
 
-### ⚙️ Backend Layer (Python Flask)
+        <h3>🗄️ Data Layer (Supabase)</h3>
+        <ul>
+            <li><strong>Database</strong>: PostgreSQL with pgvector extension</li>
+            <li><strong>Authentication</strong>: Row Level Security (RLS)</li>
+            <li><strong>Storage</strong>: Document file storage</li>
+            <li><strong>Real-time</strong>: Live chat updates</li>
+        </ul>
 
-- **Framework**: Flask with production WSGI server
-- **Processing Engine**: Document analysis and RAG implementation
-- **API Layer**: RESTful endpoints for frontend communication
-- **AI Integration**: HuggingFace models for embeddings and processing
+        <p><strong>Schema Components:</strong></p>
+        <ul>
+            <li>Chat sessions and message history</li>
+            <li>Document metadata and chunks</li>
+            <li>Vector embeddings storage</li>
+            <li>User feedback and ratings</li>
+        </ul>
 
-**Core Modules:**
+        <h2>Data Flow</h2>
 
-- `unified_server.py` - Main Flask application server
-- `hf_api_embeddings.py` - HuggingFace API integration
-- `supabase_config.py` - Database configuration
-- `health_check.py` - System monitoring
+        <h3>1. Document Upload Process</h3>
+        <pre><code>User Upload → Frontend Validation → Backend Processing →
+Text Extraction → Chunking → Embeddings → Vector Storage</code></pre>
 
-### 🗄️ Data Layer (Supabase)
+        <h3>2. Chat Query Process</h3>
+        <pre><code>User Query → Frontend → Backend API → Vector Search →
+Context Retrieval → AI Processing → Response Generation → Frontend Display</code></pre>
 
-- **Database**: PostgreSQL with pgvector extension
-- **Authentication**: Row Level Security (RLS)
-- **Storage**: Document file storage
-- **Real-time**: Live chat updates
+        <h3>3. Feedback Loop</h3>
+        <pre><code>User Feedback → Frontend Capture → Backend API →
+Database Storage → Analytics Processing</code></pre>
 
-**Schema Components:**
+        <h2>Security Architecture</h2>
 
-- Chat sessions and message history
-- Document metadata and chunks
-- Vector embeddings storage
-- User feedback and ratings
+        <h3>Authentication & Authorization</h3>
+        <ul>
+            <li>JWT-based session management</li>
+            <li>Supabase Row Level Security (RLS)</li>
+            <li>API key management for external services</li>
+        </ul>
 
-## Data Flow
+        <h3>Data Protection</h3>
+        <ul>
+            <li>Encrypted data transmission (HTTPS)</li>
+            <li>Secure file upload validation</li>
+            <li>Input sanitization and validation</li>
+            <li>Environment variable protection</li>
+        </ul>
 
-### 1. Document Upload Process
+        <h2>Scalability Considerations</h2>
 
-```
-User Upload → Frontend Validation → Backend Processing →
-Text Extraction → Chunking → Embeddings → Vector Storage
-```
+        <h3>Horizontal Scaling</h3>
+        <ul>
+            <li>Stateless backend design</li>
+            <li>Container-ready deployment</li>
+            <li>Load balancer compatibility</li>
+        </ul>
 
-### 2. Chat Query Process
+        <h3>Performance Optimization</h3>
+        <ul>
+            <li>Vector similarity caching</li>
+            <li>Chunked document processing</li>
+            <li>Async processing for large files</li>
+            <li>Database query optimization</li>
+        </ul>
 
-```
-User Query → Frontend → Backend API → Vector Search →
-Context Retrieval → AI Processing → Response Generation → Frontend Display
-```
+        <h2>Technology Integration</h2>
 
-### 3. Feedback Loop
+        <h3>AI/ML Stack</h3>
+        <ul>
+            <li><strong>HuggingFace Transformers</strong>: Text embeddings and processing</li>
+            <li><strong>Vector Database</strong>: Semantic similarity search</li>
+            <li><strong>RAG Pipeline</strong>: Context-aware response generation</li>
+        </ul>
 
-```
-User Feedback → Frontend Capture → Backend API →
-Database Storage → Analytics Processing
-```
+        <h3>DevOps & Deployment</h3>
+        <ul>
+            <li><strong>Frontend</strong>: Vercel deployment with edge functions</li>
+            <li><strong>Backend</strong>: Render.com with auto-scaling</li>
+            <li><strong>Database</strong>: Supabase managed PostgreSQL</li>
+            <li><strong>Monitoring</strong>: Health checks and error tracking</li>
+        </ul>
 
-## Security Architecture
-
-### Authentication & Authorization
-
-- JWT-based session management
-- Supabase Row Level Security (RLS)
-- API key management for external services
-
-### Data Protection
-
-- Encrypted data transmission (HTTPS)
-- Secure file upload validation
-- Input sanitization and validation
-- Environment variable protection
-
-## Scalability Considerations
-
-### Horizontal Scaling
-
-- Stateless backend design
-- Container-ready deployment
-- Load balancer compatibility
-
-### Performance Optimization
-
-- Vector similarity caching
-- Chunked document processing
-- Async processing for large files
-- Database query optimization
-
-## Technology Integration
-
-### AI/ML Stack
-
-- **HuggingFace Transformers**: Text embeddings and processing
-- **Vector Database**: Semantic similarity search
-- **RAG Pipeline**: Context-aware response generation
-
-### DevOps & Deployment
-
-- **Frontend**: Vercel deployment with edge functions
-- **Backend**: Render.com with auto-scaling
-- **Database**: Supabase managed PostgreSQL
-- **Monitoring**: Health checks and error tracking
+    </div>
+</div>

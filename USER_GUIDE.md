@@ -9,305 +9,230 @@ title: User Guide - DataLoud
         <p class="page-description">Learn how to get the most out of DataLoud's AI-powered document chatbot</p>
     </div>
 
-# 📚 User Guide
-
-## Getting Started
-
-### Welcome to the AI-Powered Document Chatbot
-
-This intelligent chatbot enables you to have natural conversations with your documents. Upload PDFs, CSV files, or JSON documents and ask questions as if you're talking to an expert who has read and understood your content.
-
-## 🚀 Quick Start
-
-### Step 1: Document Upload
-
-1. Click the **"Upload Document"** button or drag and drop your file
-2. Supported formats: PDF, CSV, JSON
-3. Wait for processing confirmation (usually 10-30 seconds)
-4. You'll see a success message when ready
-
-### Step 2: Start Chatting
-
-1. Type your question in the chat input field
-2. Ask natural language questions like:
-   - "What is the main topic of this document?"
-   - "Summarize the key findings"
-   - "Find information about [specific topic]"
-3. Press Enter or click Send
-
-### Step 3: Review Responses
-
-- Each response includes relevant source excerpts
-- Click on source references to see exact document locations
-- Use the feedback buttons (👍/👎) to rate responses
-
-## 💡 Tips for Better Results
-
-### Effective Question Techniques
-
-#### ✅ Good Questions:
-
-- **Specific**: "What are the three main benefits of renewable energy mentioned?"
-- **Contextual**: "How does the author define machine learning in chapter 2?"
-- **Analytical**: "What evidence supports the main hypothesis?"
-
-#### ❌ Avoid:
-
-- **Too vague**: "Tell me about this"
-- **Outside scope**: Questions about content not in your document
-- **Multiple topics**: Ask one question at a time for best results
-
-### Document Preparation Tips
-
-#### For PDFs:
-
-- Ensure text is selectable (not scanned images)
-- Clear document structure helps with better chunking
-- Remove unnecessary pages to focus on relevant content
-
-#### For CSV Files:
-
-- Include column headers
-- Clean data for better analysis
-- Reasonable file sizes (under 50MB recommended)
-
-#### For JSON Files:
-
-- Well-structured JSON with clear key-value pairs
-- Avoid deeply nested objects when possible
-- Include descriptive field names
-
-## 🎯 Feature Guide
-
-### Chat Interface Features
-
-#### Message History
-
-- All conversations are automatically saved
-- Switch between different chat sessions
-- Export chat history as text or PDF
-
-#### Source References
-
-- Each AI response includes source citations
-- Click sources to view original document context
-- Confidence scores show relevance strength
-
-#### Feedback System
-
-- Rate responses with thumbs up/down
-- Provide detailed feedback comments
-- Help improve AI accuracy over time
-
-### Document Management
-
-#### Multiple Documents
-
-- Upload and manage multiple documents
-- Switch between documents in the same session
-- Cross-reference information between documents
-
-#### Document Preview
-
-- View document pages directly in the interface
-- Navigate to specific pages mentioned in responses
-- Highlight relevant sections
-
-#### Processing Status
-
-- Real-time processing updates
-- Error notifications with helpful suggestions
-- Retry failed uploads
-
-### Advanced Features
-
-#### Semantic Search
-
-- Find content based on meaning, not just keywords
-- Discover related concepts across the document
-- Contextual understanding of your queries
-
-#### Conversation Context
-
-- AI remembers previous questions in the session
-- Build complex discussions over multiple exchanges
-- Reference earlier parts of the conversation
-
-## 🔧 Troubleshooting
-
-### Common Issues and Solutions
-
-#### Upload Problems
-
-**Issue**: "File upload failed"
-
-- **Solution**: Check file size (max 50MB) and format (PDF, CSV, JSON only)
-- **Alternative**: Try refreshing the page and uploading again
-
-**Issue**: "Document processing taking too long"
-
-- **Solution**: Large documents may take 1-2 minutes; please wait
-- **Check**: Ensure stable internet connection
-
-#### Chat Issues
-
-**Issue**: "AI responses seem irrelevant"
-
-- **Solution**: Try more specific questions
-- **Tip**: Reference specific sections or pages when possible
-
-**Issue**: "No response generated"
-
-- **Solution**: Check if document processing is complete
-- **Retry**: Refresh page and try again
-
-#### Performance Issues
-
-**Issue**: "Interface loading slowly"
-
-- **Solution**: Clear browser cache and cookies
-- **Alternative**: Try a different browser (Chrome, Firefox, Safari)
-
-### Error Messages
-
-#### "Authentication Error"
-
-- Refresh the page to reconnect
-- Clear browser data if problem persists
-
-#### "Service Temporarily Unavailable"
-
-- AI services may be updating; try again in a few minutes
-- Check status page for known issues
-
-#### "Document Format Not Supported"
-
-- Convert document to PDF, CSV, or JSON format
-- Ensure file is not corrupted
-
-## 📊 Understanding Your Data
-
-### Privacy and Security
-
-- Documents are processed securely with encryption
-- Chat history is private to your session
-- Files are automatically deleted after session ends
-- No personal data is stored permanently
-
-### Data Processing
-
-- Documents are split into smaller chunks for analysis
-- Each chunk is converted to mathematical representations (embeddings)
-- AI searches these representations to find relevant content
-- Responses are generated based on the most relevant chunks
-
-### Limitations
-
-- AI responses are based solely on uploaded document content
-- Cannot access external information or browse the internet
-- Best suited for factual, informational documents
-- May struggle with heavily visual content (charts, diagrams)
-
-## 🎨 Interface Guide
-
-### Navigation Elements
-
-#### Header
-
-- Logo and application title
-- Document status indicator
-- User menu and settings
-
-#### Sidebar
-
-- Document list and management
-- Chat session history
-- Settings and preferences
-
-#### Main Chat Area
-
-- Message thread with user and AI responses
-- Source reference panels
-- Input field with send button
-
-#### Footer
-
-- Feedback options
-- Help and documentation links
-- Status indicators
-
-### Keyboard Shortcuts
-
-- **Enter**: Send message
-- **Shift + Enter**: New line in message
-- **Ctrl + U**: Upload new document
-- **Ctrl + H**: Toggle chat history
-- **Esc**: Clear current input
-
-### Mobile Experience
-
-- Fully responsive design works on all devices
-- Touch-friendly interface elements
-- Swipe gestures for navigation
-- Optimized for mobile typing
-
-## 🎓 Use Cases and Examples
-
-### Academic Research
-
-**Scenario**: Analyzing research papers
-
-```
-User: "What methodology did the authors use for data collection?"
-AI: "Based on Section 3.2, the authors employed a mixed-methods approach combining quantitative surveys (n=500) and qualitative interviews (n=25)..."
-```
-
-### Business Analysis
-
-**Scenario**: Reviewing financial reports
-
-```
-User: "What were the main factors affecting revenue growth?"
-AI: "According to the Q3 report, three primary factors influenced revenue growth: market expansion (contributing 15%), new product launches (12%), and improved operational efficiency (8%)..."
-```
-
-### Legal Document Review
-
-**Scenario**: Contract analysis
-
-```
-User: "What are the termination clauses in this agreement?"
-AI: "The contract includes three termination provisions: (1) Either party may terminate with 30 days written notice (Section 12.1), (2) Immediate termination for breach (Section 12.2)..."
-```
-
-### Educational Content
-
-**Scenario**: Studying textbook material
-
-```
-User: "Explain the concept of photosynthesis mentioned in chapter 4"
-AI: "Chapter 4 defines photosynthesis as the process by which plants convert light energy into chemical energy. The process occurs in two main stages..."
-```
-
-## 📞 Support and Help
-
-### Getting Help
-
-- Use the in-app help chat for immediate assistance
-- Check the documentation for detailed guides
-- Report bugs through the feedback system
-
-### Best Practices
-
-1. Start with clear, specific questions
-2. Provide context when asking follow-up questions
-3. Use feedback buttons to improve AI responses
-4. Keep documents well-organized and clearly formatted
-5. Take advantage of source references for verification
-
-### Community Guidelines
-
-- Use respectful language in feedback
-- Report inappropriate content or behavior
-- Help improve the system through constructive feedback
-- Respect intellectual property when uploading documents
+    <div class="privacy-content">
+        <h2>Getting Started</h2>
+
+        <h3>Welcome to the AI-Powered Document Chatbot</h3>
+        <p>This intelligent chatbot enables you to have natural conversations with your documents. Upload PDFs, CSV files, or JSON documents and ask questions as if you're talking to an expert who has read and understood your content.</p>
+
+        <h2>🚀 Quick Start</h2>
+
+        <h3>Step 1: Document Upload</h3>
+        <ol>
+            <li>Click the <strong>"Upload Document"</strong> button or drag and drop your file</li>
+            <li>Supported formats: PDF, CSV, JSON</li>
+            <li>Wait for processing confirmation (usually 10-30 seconds)</li>
+            <li>You'll see a success message when ready</li>
+        </ol>
+
+        <h3>Step 2: Start Chatting</h3>
+        <ol>
+            <li>Type your question in the chat input field</li>
+            <li>Ask natural language questions like:
+                <ul>
+                    <li>"What is the main topic of this document?"</li>
+                    <li>"Summarize the key findings"</li>
+                    <li>"Find information about [specific topic]"</li>
+                </ul>
+            </li>
+            <li>Press Enter or click Send</li>
+        </ol>
+
+        <h3>Step 3: Review Responses</h3>
+        <ul>
+            <li>Each response includes relevant source excerpts</li>
+            <li>Click on source references to see exact document locations</li>
+            <li>Use the feedback buttons (👍/👎) to rate responses</li>
+        </ul>
+
+        <h2>💡 Tips for Better Results</h2>
+
+        <h3>Effective Question Techniques</h3>
+
+        <h4>✅ Good Questions:</h4>
+        <ul>
+            <li><strong>Specific</strong>: "What are the three main benefits of renewable energy mentioned?"</li>
+            <li><strong>Contextual</strong>: "How does the author define machine learning in chapter 2?"</li>
+            <li><strong>Analytical</strong>: "Compare the performance metrics between models A and B"</li>
+            <li><strong>Summary-focused</strong>: "Summarize the conclusions of this research paper"</li>
+        </ul>
+
+        <h4>❌ Less Effective Questions:</h4>
+        <ul>
+            <li><strong>Too vague</strong>: "Tell me about this document"</li>
+            <li><strong>Yes/No only</strong>: "Is this document good?"</li>
+            <li><strong>Outside scope</strong>: "What's the weather today?"</li>
+        </ul>
+
+        <h2>📄 Supported Document Types</h2>
+
+        <div class="rights-grid">
+            <div class="right-item">
+                <h3>📑 PDF Documents</h3>
+                <p>Research papers, reports, books, manuals, and any text-based PDF files.</p>
+                <ul>
+                    <li>Maximum size: 50MB</li>
+                    <li>Text extraction from scanned PDFs</li>
+                    <li>Preserves document structure</li>
+                </ul>
+            </div>
+
+            <div class="right-item">
+                <h3>📊 CSV Files</h3>
+                <p>Data tables, spreadsheets, and structured datasets for analysis.</p>
+                <ul>
+                    <li>Automatic column detection</li>
+                    <li>Statistical analysis capabilities</li>
+                    <li>Data relationship queries</li>
+                </ul>
+            </div>
+
+            <div class="right-item">
+                <h3>🔧 JSON Documents</h3>
+                <p>Configuration files, API responses, and structured data formats.</p>
+                <ul>
+                    <li>Nested object analysis</li>
+                    <li>Schema understanding</li>
+                    <li>Value extraction queries</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>🎯 Use Cases & Examples</h2>
+
+        <h3>Research & Analysis</h3>
+        <p><strong>Example Questions:</strong></p>
+        <ul>
+            <li>"What methodology was used in this study?"</li>
+            <li>"List all the statistical findings mentioned"</li>
+            <li>"What are the limitations of this research?"</li>
+        </ul>
+
+        <h3>Business Documents</h3>
+        <p><strong>Example Questions:</strong></p>
+        <ul>
+            <li>"What are the key performance indicators?"</li>
+            <li>"Summarize the quarterly revenue trends"</li>
+            <li>"What recommendations does the report make?"</li>
+        </ul>
+
+        <h3>Technical Documentation</h3>
+        <p><strong>Example Questions:</strong></p>
+        <ul>
+            <li>"How do I configure this feature?"</li>
+            <li>"What are the system requirements?"</li>
+            <li>"Explain the installation process step by step"</li>
+        </ul>
+
+        <h2>🔧 Advanced Features</h2>
+
+        <h3>Source Citations</h3>
+        <p>Every response includes:</p>
+        <ul>
+            <li><strong>Page references</strong> for PDF documents</li>
+            <li><strong>Row/column references</strong> for CSV data</li>
+            <li><strong>JSON path references</strong> for structured data</li>
+            <li><strong>Confidence scores</strong> for source relevance</li>
+        </ul>
+
+        <h3>Context Awareness</h3>
+        <ul>
+            <li>Maintains conversation history</li>
+            <li>References previous questions and answers</li>
+            <li>Builds upon earlier topics in the conversation</li>
+        </ul>
+
+        <h3>Multi-Document Support</h3>
+        <ul>
+            <li>Upload multiple documents for comparison</li>
+            <li>Cross-reference information between files</li>
+            <li>Synthesize insights from multiple sources</li>
+        </ul>
+
+        <h2>⚙️ Settings & Customization</h2>
+
+        <h3>Response Preferences</h3>
+        <ul>
+            <li><strong>Response Length</strong>: Choose between concise, detailed, or comprehensive answers</li>
+            <li><strong>Citation Style</strong>: Select how source references are displayed</li>
+            <li><strong>Language Tone</strong>: Professional, casual, or academic writing style</li>
+        </ul>
+
+        <h3>Privacy Controls</h3>
+        <ul>
+            <li>Documents are processed securely and not stored permanently</li>
+            <li>Chat history can be cleared at any time</li>
+            <li>No personal data is retained after session ends</li>
+        </ul>
+
+        <h2>🚨 Troubleshooting</h2>
+
+        <h3>Common Issues</h3>
+
+        <div class="contact-info">
+            <h4>Document Upload Fails</h4>
+            <ul>
+                <li>Check file size (max 50MB)</li>
+                <li>Ensure file format is supported (PDF, CSV, JSON)</li>
+                <li>Try refreshing the page and uploading again</li>
+            </ul>
+
+            <h4>Poor Response Quality</h4>
+            <ul>
+                <li>Make questions more specific</li>
+                <li>Provide more context in your query</li>
+                <li>Try rephrasing the question</li>
+            </ul>
+
+            <h4>Slow Processing</h4>
+            <ul>
+                <li>Large documents take longer to process</li>
+                <li>Wait for processing confirmation before asking questions</li>
+                <li>Check your internet connection</li>
+            </ul>
+        </div>
+
+        <h2>📱 Browser Compatibility</h2>
+        <p>DataLoud works best with modern web browsers:</p>
+        <ul>
+            <li><strong>Recommended</strong>: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+</li>
+            <li><strong>Mobile Support</strong>: iOS Safari, Chrome Mobile, Samsung Internet</li>
+            <li><strong>Features Required</strong>: JavaScript enabled, cookies allowed</li>
+        </ul>
+
+        <h2>🎓 Best Practices</h2>
+
+        <h3>For Optimal Results</h3>
+        <ol>
+            <li><strong>Upload Quality Documents</strong>: Clear, well-formatted text produces better results</li>
+            <li><strong>Ask Specific Questions</strong>: Targeted queries yield more accurate responses</li>
+            <li><strong>Use Follow-up Questions</strong>: Build on previous responses for deeper insights</li>
+            <li><strong>Provide Feedback</strong>: Rate responses to help improve the system</li>
+            <li><strong>Verify Important Information</strong>: Always cross-check critical data with source documents</li>
+        </ol>
+
+        <h3>Security Guidelines</h3>
+        <ul>
+            <li>Don't upload documents containing sensitive personal information</li>
+            <li>Avoid sharing proprietary or confidential business data</li>
+            <li>Log out completely when using shared computers</li>
+            <li>Report any security concerns immediately</li>
+        </ul>
+
+        <h2>🆘 Support & Help</h2>
+
+        <div class="contact-info">
+            <p>Need additional help? Here's how to get support:</p>
+            <ul>
+                <li><strong>Documentation</strong>: Check our comprehensive <a href="./API">API Documentation</a></li>
+                <li><strong>GitHub Issues</strong>: Report bugs or request features on <a href="https://github.com/PaoloAstrino/DataLoud_public" target="_blank">GitHub</a></li>
+                <li><strong>Community</strong>: Join discussions and get help from other users</li>
+            </ul>
+        </div>
+
+        <div class="policy-footer">
+            <p><em>This user guide is regularly updated to reflect new features and improvements. Last updated: {{ site.time | date: "%B %d, %Y" }}</em></p>
+        </div>
+
+    </div>
+</div>
